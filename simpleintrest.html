@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple intrest</title>
+</head>
+<body>
+    <h2>simple interest calculator</h2>
+    <table>
+        <tr>
+            <td>Principle</td>
+            <td><input type="text" id="num1"></td>
+        </tr>
+        <tr>
+            <td>time</td>
+            <td><input type="text" id="num2"></td>
+        </tr>
+        <tr>
+            <td>rate of interest</td>
+            <td><input type="text" id="num3"></td>
+        </tr>
+        <tr>
+            <td><button onclick="interest()">simpleinterest</button></td> 
+        </tr>
+    </table>
+    <p>Result : <span id="result"></span></p>
+    <script>
+        function interest()
+        {
+            var a=parseInt(document.getElementById('num1').value)
+            var b=parseInt(document.getElementById('num2').value)
+            var b=parseInt(document.getElementById('num3').value)
+            d=(a*b*c)/100
+            
+            document.getElementById('result').innerHTML=d
+        }
+        
+    </script> 
+</body>
+</html>
